@@ -21,7 +21,11 @@ function addToCart(item) {
   return `${item} has been added to your cart.`;
 }
 
-console.log("Your")
+if (cart.length === 0) {
+  console.log("Your shopping cart is empty.");
+} else {
+  console.log("In your cart, you have");
+}
 
 function total() {
   // write your code here
