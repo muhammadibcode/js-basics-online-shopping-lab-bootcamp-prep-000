@@ -33,7 +33,7 @@ function viewCart() {
         if (i == 0) {
           viewMessage = viewMessage + ` ${cart[i].itemName} at $${cart[i].itemPrice}.`;
         } else {
-          viewMessage = viewMessage + ` and $${cart[i].itemPrice}.`;
+          viewMessage = viewMessage + ` and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
         }
       } else {
         viewMessage = viewMessage + ` ${cart[i].itemName} at $${cart[i].itemPrice},`;
