@@ -56,7 +56,7 @@ function removeFromCart(item) {
     if (cart[i].itemName == item) {
       // If the name provided to removeFromCart  is a match for itemName at index i, save i as itemToDeleteIndex.
       var itemToDeleteIndex = i;
-      return console.log(5);
+      console.log(5);
     } else {
       if (i == cart.length - 1) {
         if (itemToDeleteIndex === null) {
@@ -77,7 +77,7 @@ addToCart("pears");
 
 addToCart("grapes");
 
-console.log(removeFromCart("bananas"));
+console.log(removeFromCart("apples"));
 
 
 function placeOrder(cardNumber) {
