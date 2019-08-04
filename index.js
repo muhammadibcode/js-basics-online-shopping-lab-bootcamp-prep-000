@@ -21,6 +21,8 @@ function addToCart(item) {
   return `${item} has been added to your cart.`;
 }
 
+addToCart("bananas");
+
 if (cart.length === 0) {
   console.log("Your shopping cart is empty.");
 } else {
