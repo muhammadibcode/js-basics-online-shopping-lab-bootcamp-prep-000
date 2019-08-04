@@ -58,11 +58,11 @@ function removeFromCart(item) {
       // If the name provided to removeFromCart  is a match for itemName at index i, save i as itemToDeleteIndex.
       var itemToDeleteIndex = i;
       itemToDeleteIsPresent = true;
+      cart.
       return itemToDeleteIndex;
     } else {
       if (i == cart.length - 1) {
         if (itemToDeleteIsPresent === false) {
-          console.log("item is missing")
           return "That item is not in your cart.";
         }
       }
