@@ -31,15 +31,18 @@ function viewCart() {
       // cart.length - 1 will be the final index of the cart.
       if (i == cart.length - 1) {
         if (i == 0) {
-          console.log(viewMessage + ` ${cart[i].itemName} at ${cart[i].itemPrice}.`);
-          console.log(viewMessage);
+          viewMessage = viewMessage + ` ${cart[i].itemName} at ${cart[i].itemPrice}.`;
+
         } else {
-          console.log(viewMessage + ` and ${cart[i].itemName} at ${cart[i].itemPrice}.`);
+          viewMessage = viewMessage + ` and ${cart[i].itemName} at ${cart[i].itemPrice}.`;
+
         }
       } else {
-        console.log(viewMessage + ` ${cart[i].itemName} at ${cart[i].itemPrice},`);
+        viewMessage = viewMessage + ` ${cart[i].itemName} at ${cart[i].itemPrice},`;
+
       }
     }
+    console.log(viewMessage);
   }
 }
 
