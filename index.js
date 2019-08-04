@@ -39,7 +39,7 @@ function viewCart() {
         viewMessage = viewMessage + ` ${cart[i].itemName} at ${cart[i].itemPrice},`;
       }
     }
-    console.log(viewMessage);
+    return viewMessage;
   }
 }
 
