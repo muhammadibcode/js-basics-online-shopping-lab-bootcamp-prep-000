@@ -32,14 +32,11 @@ function viewCart() {
       if (i == cart.length - 1) {
         if (i == 0) {
           viewMessage = viewMessage + ` ${cart[i].itemName} at ${cart[i].itemPrice}.`;
-
         } else {
           viewMessage = viewMessage + ` and ${cart[i].itemName} at ${cart[i].itemPrice}.`;
-
         }
       } else {
         viewMessage = viewMessage + ` ${cart[i].itemName} at ${cart[i].itemPrice},`;
-
       }
     }
     console.log(viewMessage);
@@ -47,8 +44,6 @@ function viewCart() {
 }
 
 addToCart("bananas");
-
-addToCart("pears");
 
 viewCart();
 
