@@ -28,7 +28,11 @@ function viewCart() {
     viewMessage = "In your cart, you have";
     for (var i = 0; i != cart.length; i++) {
       if (i == cart.length - 1) {
-        console.log(viewMessage + ` and ${cart[i].itemName} at ${cart[i].itemPrice}.`);
+        if (i == 0) {
+          console.log(viewMessage + ` ${cart[i].itemName} at ${cart[i].itemPrice}.`);
+        } else {
+          console.log(viewMessage + ` and ${cart[i].itemName} at ${cart[i].itemPrice}.`);
+        }
       } else {
         console.log(viewMessage + ` ${cart[i].itemName} at ${cart[i].itemPrice},`);
       }
