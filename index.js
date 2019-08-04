@@ -58,11 +58,16 @@ function removeFromCart(item) {
     if (cart[i].itemName = item) {
       // If the name provided to removeFromCart  is a match for itemName at index i, save i as itemToDeleteIndex.
       var itemToDeleteIndex = i;
+      console.log(itemToDeleteIndex);
     } else {
       if (i == cart.length - 1) {
         if (itemToDeleteIndex == null) {
           return "That item is not in your cart.";
+      } else {
+        continue
       }
+      } else {
+        continue
       }
     }
   }
