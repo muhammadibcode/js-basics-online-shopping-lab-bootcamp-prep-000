@@ -27,9 +27,12 @@ function viewCart() {
         } else {
     viewMessage = "In your cart, you have";
     for (var i = 0; i != cart.length; i++) {
-      console.log(viewMessage + ` ${cart[i].itemName} at ${cart[i].itemPrice},`);
+      if (i == cart.length - 1) {
+        console.log(viewMessage + ` and ${cart[i].itemName} at ${cart[i].itemPrice}.`);
+      } else {
+        console.log(viewMessage + ` ${cart[i].itemName} at ${cart[i].itemPrice},`);
+      }
     }
-
   }
 }
 
