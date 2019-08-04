@@ -55,7 +55,7 @@ function removeFromCart(item) {
   var itemToDeleteIsPresent = false;
   for (var i = 0; i != cart.length; i++) {
     if (cart[i].itemName == item) {
-      // If the name provided to removeFromCart  is a match for itemName at index i, save i as itemToDeleteIndex.
+      // If the name provided to removeFromCart is a match for an itemName at index i, save i as itemToDeleteIndex.
       var itemToDeleteIndex = i;
       itemToDeleteIsPresent = true;
       cart.splice(i, 1);
