@@ -57,7 +57,7 @@ function removeFromCart(item) {
         return `${item} found.`;
     } else {
       if (i == cart.length - 1) {
-        return "All items searched.";
+        return "That item is not in your cart.";
       } else {
         continue;
       }
