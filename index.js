@@ -76,10 +76,10 @@ addToCart("bananas");
 console.log(removeFromCart("grapes"));
 
 function placeOrder(cardNumber) {
-  if (cardNumber === "") {
-    return "Sorry, we don't have a credit card on file for you.";
-  } else {
+  if (cardNumber) {
     return "Received";
+  } else {
+    return "Sorry, we don't have a credit card on file for you.";
   }
 }
 
