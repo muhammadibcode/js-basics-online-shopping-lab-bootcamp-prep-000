@@ -63,6 +63,11 @@ function removeFromCart(item) {
         if (itemToDeleteIsPresent === false) {
           return "That item is not in your cart.";
           console.log("item is missing")
+        }
+      }
+    }
+  }
+}
   
   
 
