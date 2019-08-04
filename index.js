@@ -81,6 +81,8 @@ addToCart("pears");
 
 addToCart("grapes");
 
+console.log(cart);
+
 console.log(removeFromCart("bananas"));
 
 
