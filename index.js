@@ -56,7 +56,11 @@ function removeFromCart(item) {
     if (cart[i].itemName == item) {
         return `${item} found.`;
     } else {
-      continue;
+      if (i == cart.length - 1) {
+        return "All items searched.";
+      } else {
+        continue;
+      }
     }
   }
 }
