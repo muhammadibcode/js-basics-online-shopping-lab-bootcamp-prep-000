@@ -9,13 +9,27 @@ function setCart(c) {
   return cart;
 }
 
+function randomisePrice() {
+  return Math.floor(Math.random() * 99) + 1;
+}
+
 function addToCart(item) {
- // write your code here
+  var itemTag = {};
+  itemTag["itemName"] = item;
+  itemTag["itemPrice"] = randomisePrice();
+  cart.push(itemTag);
+  return `${item} has been added to your cart.`;
 }
 
 function viewCart() {
-  // write your code here
+  if (cart.length === 0) {
+    return "Your shopping cart is empty.";
+  } else {
+    return "In your cart you have";
+  }
 }
+
+viewCart();
 
 function total() {
   // write your code here
