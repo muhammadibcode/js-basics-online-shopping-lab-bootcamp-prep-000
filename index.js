@@ -43,16 +43,6 @@ function viewCart() {
   }
 }
 
-addToCart("grapes");
-
-addToCart("apples");
-
-addToCart("pears");
-
-addToCart("bananas");
-
-viewCart();
-
 function total() {
   // write your code here
 }
