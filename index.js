@@ -59,7 +59,7 @@ function removeFromCart(item) {
       console.log(5);
     } else {
       if (i == cart.length - 1) {
-        if (itemToDeleteIndex === null) {
+        if (itemToDeleteIndex != i) {
           return "That item is not in your cart.";
       } else {
         continue;
