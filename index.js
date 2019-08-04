@@ -54,10 +54,10 @@ function total() {
 function removeFromCart(item) {
   for (var i = 0; i != cart.length; i++) {
     if (cart[i].itemName = item) {
-      // if item name specified is a match, save in the index as itemToDeleteIndex.
+      // If the name provided to removeFromCart  is a match for itemName at index i, save i as itemToDeleteIndex.
       var itemToDeleteIndex = i;
     } else {
-      
+      continue
     }
   }
 }
