@@ -30,6 +30,8 @@ function viewCart() {
   }
 }
 
+addToCart("bananas");
+
 viewCart();
 
 function total() {
