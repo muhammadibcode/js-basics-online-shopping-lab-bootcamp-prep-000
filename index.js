@@ -53,7 +53,7 @@ function total() {
 
 function removeFromCart(item) {
   for (var i = 0; i != cart.length; i++) {
-    if (cart[i].itemName = item) {
+    if (cart[i].itemName == item) {
       // If the name provided to removeFromCart  is a match for itemName at index i, save i as itemToDeleteIndex.
       var itemToDeleteIndex = i;
       console.log(5);
