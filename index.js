@@ -73,10 +73,14 @@ addToCart("grapes");
 
 addToCart("bananas");
 
-
 console.log(removeFromCart("grapes"));
 
-
 function placeOrder(cardNumber) {
-  // write your code here
+  if (cardNumber === null) {
+    return "Sorry, we don't have a credit card on file for you.";
+  } else {
+    return console.log("Received.");
+  }
 }
+
+console.log(placeOrder());
