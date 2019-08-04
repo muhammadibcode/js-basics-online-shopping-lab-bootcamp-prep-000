@@ -83,4 +83,4 @@ function placeOrder(cardNumber) {
   }
 }
 
-console.log(placeOrder(5));
+console.log(placeOrder());
