@@ -60,6 +60,7 @@ function removeFromCart(item) {
       continue
     }
   }
+  
 }
 
 function placeOrder(cardNumber) {
