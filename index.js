@@ -73,7 +73,7 @@ addToCart("bananas");
 
 console.log(cart);
 
-console.log(removeFromCart("satsumas"));
+console.log(removeFromCart("grapes"));
 
 
 function placeOrder(cardNumber) {
