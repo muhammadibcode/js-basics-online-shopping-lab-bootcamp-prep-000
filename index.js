@@ -51,8 +51,6 @@ function total() {
    return total;
 }
 
-addToCart("bananas");
-
 function removeFromCart(item) {
   for (var i = 0; i != cart.length; i++) {
     if (cart[i].itemName = item) {
@@ -72,6 +70,12 @@ function removeFromCart(item) {
     }
   }
 }
+
+addToCart("bananas");
+
+addToCart("pears");
+
+addToCart("grapes");
 
 console.log(removeFromCart("bananas"));
 
