@@ -62,14 +62,14 @@ function removeFromCart(item) {
       return cart;
     } else {
       if (i == cart.length - 1) {
-        if (itemToDeleteIsPresent === false) {
-          return "That item is not in your cart.";
-        }
+        return "That item is not in your cart.";
+      } else {
+        continue ;
       }
     }
   }
 }
-  
+
 
 addToCart("pears");
 
