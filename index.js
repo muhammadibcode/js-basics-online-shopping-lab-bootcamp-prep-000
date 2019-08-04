@@ -77,7 +77,7 @@ addToCart("pears");
 
 addToCart("grapes");
 
-console.log(removeFromCart("banans"));
+console.log(removeFromCart("bananas"));
 
 
 function placeOrder(cardNumber) {
