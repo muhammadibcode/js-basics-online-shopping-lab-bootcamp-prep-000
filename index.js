@@ -52,7 +52,14 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  for (var i = 0; i != cart.length; i++) {
+    if (cart[i].itemName = item) {
+      // if item name specified is a match, save in the index as itemToDeleteIndex.
+      var itemToDeleteIndex = i;
+    } else {
+      
+    }
+  }
 }
 
 function placeOrder(cardNumber) {
