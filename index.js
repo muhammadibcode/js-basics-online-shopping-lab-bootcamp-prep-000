@@ -59,8 +59,6 @@ function removeFromCart(item) {
     } else {
       if (i == cart.length - 1) {
         return "That item is not in your cart.";
-      } else {
-        continue;
       }
     }
   }
@@ -72,7 +70,6 @@ addToCart("grapes");
 
 addToCart("bananas");
 
-console.log(cart);
 
 console.log(removeFromCart("grapes"));
 
