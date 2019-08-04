@@ -26,10 +26,13 @@ function viewCart() {
     console.log("Your shopping cart is empty.");
         } else {
     viewMessage = "In your cart, you have";
+    // i will always represent the index of cart.
     for (var i = 0; i != cart.length; i++) {
+      // cart.length - 1 will be the final index of the cart.
       if (i == cart.length - 1) {
         if (i == 0) {
           console.log(viewMessage + ` ${cart[i].itemName} at ${cart[i].itemPrice}.`);
+          console.log(viewMessage);
         } else {
           console.log(viewMessage + ` and ${cart[i].itemName} at ${cart[i].itemPrice}.`);
         }
