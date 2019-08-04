@@ -29,6 +29,9 @@ function viewCart() {
   }
 }
 
+addToCart("banana");
+viewCart();
+
 function total() {
   // write your code here
 }
