@@ -67,20 +67,12 @@ function removeFromCart(item) {
   return "That item is not in your cart.";
 }
 
-addToCart("pears");
-
-addToCart("grapes");
-
-addToCart("bananas");
-
-console.log(removeFromCart("grapes"));
-
 function placeOrder(cardNumber) {
   if (cardNumber) {
-    return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`;
+    var confirmation = `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`;
+    cart = [];
+    return confirmation;
   } else {
     return "Sorry, we don't have a credit card on file for you.";
   }
 }
-
-console.log(placeOrder(5));
