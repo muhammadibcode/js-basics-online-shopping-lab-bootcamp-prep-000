@@ -53,7 +53,12 @@ function total() {
 
 function removeFromCart(item) {
   for (var i = 0; i != cart.length; i++) {
-  return item;
+    if (cart[i].itemName == item) {
+        return `${item} found.`;
+    } else {
+      return "Searching.";
+    }
+  }
 }
 
 addToCart("pears");
