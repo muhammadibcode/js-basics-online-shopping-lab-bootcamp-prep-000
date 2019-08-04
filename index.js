@@ -26,6 +26,7 @@ function viewCart() {
     console.log("Your shopping cart is empty.");
         } else {
     viewMessage = "In your cart, you have";
+    for (var i = 0, i == cart.length, )
     console.log(viewMessage);
   }
 }
