@@ -25,7 +25,7 @@ function viewCart() {
   if (cart.length === 0) {
     console.log("Your shopping cart is empty.");
         } else {
-    viewMessage = "In your cart, you have";
+    var viewMessage = "In your cart, you have";
     // i will always represent the index of cart.
     for (var i = 0; i != cart.length; i++) {
       // cart.length - 1 will be the final index of the cart.
