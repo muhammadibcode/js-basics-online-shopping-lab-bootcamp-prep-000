@@ -52,11 +52,12 @@ function total() {
 }
 
 function removeFromCart(item) {
+  var itemToDeleteIsPresent = false;
   for (var i = 0; i != cart.length; i++) {
     if (cart[i].itemName == item) {
       // If the name provided to removeFromCart  is a match for itemName at index i, save i as itemToDeleteIndex.
       var itemToDeleteIndex = i;
-      var itemToDeleteIsPresent = true;
+      itemToDeleteIsPresent = true;
       return console.log("item is present");
     } else {
       if (i == cart.length - 1) {
@@ -69,10 +70,6 @@ function removeFromCart(item) {
   }
 }
   
-  
-
-
-
 
 addToCart("pears");
 
