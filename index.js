@@ -23,7 +23,7 @@ function addToCart(item) {
 
 function viewCart() {
   if (cart.length === 0) {
-    console.log("Your shopping cart is empty.");
+    return "Your shopping cart is empty.";
         } else {
     var viewMessage = "In your cart, you have";
     // i will always represent the index of cart.
@@ -31,12 +31,12 @@ function viewCart() {
       // cart.length - 1 will be the final index of the cart.
       if (i == cart.length - 1) {
         if (i == 0) {
-          viewMessage = viewMessage + ` ${cart[i].itemName} at ${cart[i].itemPrice}.`;
+          viewMessage = viewMessage + ` ${cart[i].itemName} at $${cart[i].itemPrice}.`;
         } else {
-          viewMessage = viewMessage + ` and ${cart[i].itemName} at ${cart[i].itemPrice}.`;
+          viewMessage = viewMessage + ` and $${cart[i].itemPrice}.`;
         }
       } else {
-        viewMessage = viewMessage + ` ${cart[i].itemName} at ${cart[i].itemPrice},`;
+        viewMessage = viewMessage + ` ${cart[i].itemName} at $${cart[i].itemPrice},`;
       }
     }
     return viewMessage;
