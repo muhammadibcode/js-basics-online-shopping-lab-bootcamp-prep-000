@@ -43,6 +43,8 @@ function viewCart() {
   }
 }
 
+addToCart("grapes");
+
 addToCart("apples");
 
 addToCart("pears");
