@@ -21,8 +21,9 @@ function addToCart(item) {
   return `${item} has been added to your cart.`;
 }
 
-if (cart.length === 0) {
-  console.log("Your shopping cart is empty.");
+function viewCart() {
+  if (cart.length === 0) {
+    console.log("Your shopping cart is empty.");
 } else {
   console.log("In your cart, you have");
 }
