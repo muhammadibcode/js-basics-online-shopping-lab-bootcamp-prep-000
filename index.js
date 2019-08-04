@@ -75,11 +75,13 @@ function removeFromCart(item) {
   }
 }
 
-addToCart("bananas");
+
 
 addToCart("pears");
 
 addToCart("grapes");
+
+addToCart("bananas");
 
 console.log(cart);
 
