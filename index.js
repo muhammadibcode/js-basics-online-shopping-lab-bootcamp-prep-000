@@ -52,8 +52,6 @@ function total() {
 }
 
 
-
-
 addToCart("pears");
 
 addToCart("grapes");
@@ -62,7 +60,7 @@ addToCart("bananas");
 
 console.log(cart);
 
-console.log(removeFromCart("satsumas"));
+console.log(removeFromCart)
 
 
 function placeOrder(cardNumber) {
