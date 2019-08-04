@@ -51,6 +51,9 @@ function total() {
    return total;
 }
 
+function removeFromCart(item) {
+  console.log(item);
+}
 
 addToCart("pears");
 
@@ -60,7 +63,7 @@ addToCart("bananas");
 
 console.log(cart);
 
-console.log(removeFromCart)
+console.log(removeFromCart("bananas"));
 
 
 function placeOrder(cardNumber) {
