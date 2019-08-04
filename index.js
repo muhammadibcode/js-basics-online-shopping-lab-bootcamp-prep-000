@@ -27,9 +27,9 @@ function viewCart() {
         } else {
     viewMessage = "In your cart, you have";
     for (var i = 0; i != cart.length; i++) {
-      console.log(viewMessage + `${i}. cart[i])
+      console.log(viewMessage + `${i}. ${cart[i].itemName} at ${cart[i].itemPrice}`);
     }
-    console.log(viewMessage);
+
   }
 }
 
