@@ -51,17 +51,25 @@ function total() {
    return total;
 }
 
+addToCart("bananas");
+
 function removeFromCart(item) {
   for (var i = 0; i != cart.length; i++) {
     if (cart[i].itemName = item) {
       // If the name provided to removeFromCart  is a match for itemName at index i, save i as itemToDeleteIndex.
       var itemToDeleteIndex = i;
     } else {
-      continue
+      if (i == cart.length - 1) {
+        if (itemToDeleteIndex == null) {
+          return "That item is not in your cart.";
+      }
+      }
     }
   }
-  
 }
+
+console.log(removeFromCart("apples"));
+
 
 function placeOrder(cardNumber) {
   // write your code here
