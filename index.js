@@ -24,9 +24,12 @@ function addToCart(item) {
 function viewCart() {
   if (cart.length === 0) {
     console.log("Your shopping cart is empty.");
-} else {
-  console.log("In your cart, you have");
+        } else {
+    console.log("In your cart, you have");
+  }
 }
+
+viewCart();
 
 function total() {
   // write your code here
