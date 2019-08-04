@@ -42,6 +42,8 @@ function viewCart() {
 
 addToCart("bananas");
 
+addToCart("pears");
+
 viewCart();
 
 function total() {
