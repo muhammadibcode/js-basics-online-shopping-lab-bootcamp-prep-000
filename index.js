@@ -29,8 +29,6 @@ function viewCart() {
   }
 }
 
-viewCart();
-
 function total() {
   // write your code here
 }
