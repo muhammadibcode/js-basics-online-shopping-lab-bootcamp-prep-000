@@ -58,10 +58,13 @@ function removeFromCart(item) {
         return cart;
     } else {
       if (i == cart.length - 1) {
-        return "That item is not in your cart.";
+        break;
+      } else {
+        continue;
       }
     }
   }
+  return "That item is not in your cart.";
 }
 
 addToCart("pears");
