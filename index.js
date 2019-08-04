@@ -59,13 +59,13 @@ function removeFromCart(item) {
       console.log(5);
     } else {
       if (i == cart.length - 1) {
-        if (itemToDeleteIndex == null) {
+        if (itemToDeleteIndex === null) {
           return "That item is not in your cart.";
       } else {
-        continue
+        continue;
       }
       } else {
-        continue
+        continue;
       }
     }
   }
@@ -77,7 +77,7 @@ addToCart("pears");
 
 addToCart("grapes");
 
-console.log(removeFromCart("apples"));
+console.log(removeFromCart("banans"));
 
 
 function placeOrder(cardNumber) {
